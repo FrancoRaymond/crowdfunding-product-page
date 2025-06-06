@@ -6,7 +6,7 @@ import hamburger from '../assets/images/icon-hamburger.svg'
 
 const Navbar = ({size, menuOpen, setMenuOpen}) => {
   return (
-    <div  className='py-3 px-2 sm:px-5 md:px-10 lg:px-24 bg-green-600 flex align-center justify-between relative'>
+    <div  className='py-3 px-2 sm:px-5 md:px-10 lg:px-24 z-50 flex align-center justify-between relative'>
         <img src={logo} alt="" className='size-auto'/>
 
         {

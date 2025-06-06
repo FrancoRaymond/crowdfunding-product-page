@@ -1,2 +1,7 @@
 @import "tailwindcss";
 
+body{
+    max-width: 1440px;
+    @apply bg-gray-100
+}
+
