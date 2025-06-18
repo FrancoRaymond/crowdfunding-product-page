@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import BodyHeader from './components/BodyHeader';
 import Counters from './components/Counters';
+import About from './components/About';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <div className='-mt-14 z-50 absolute left-1/2 -translate-x-1/2 w-[90%] max-w-[800px]'>
         <BodyHeader />
         <Counters />
+        <About />
       </div>
     </div>
   )

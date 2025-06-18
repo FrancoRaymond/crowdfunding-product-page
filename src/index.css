@@ -5,3 +5,6 @@ body{
     @apply bg-gray-100
 }
 
+.invalidOverlay{
+    background-color: rgba(255, 255, 255, 0.6);
+}
