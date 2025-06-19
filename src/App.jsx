@@ -4,11 +4,15 @@ import Hero from './components/Hero';
 import BodyHeader from './components/BodyHeader';
 import Counters from './components/Counters';
 import About from './components/About';
+import BackProject from './components/BackProject';
+import ConfirmationModal from './components/ConfirmationModal';
 
 
 function App() {
   const [size, setSize] = useState(window.innerWidth)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [backProject, setBackProject] = useState(false)
+  const [confirm, setConfirm] = useState(true)
 
 
   useEffect(() => {
@@ -32,6 +36,8 @@ function App() {
         <Counters />
         <About />
       </div>
+      {backProject && < BackProject />}
+      {confirm && < ConfirmationModal/>}
     </div>
   )
 }
