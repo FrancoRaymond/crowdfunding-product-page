@@ -8,7 +8,7 @@ const ConfirmationModal = () => {
         <img src={iconCheck} alt="" className='size-16'/>
         <h2 className='text-2xl font-bold'>Thanks for your support!</h2>
         <p className='text-gray-400'>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
-      <button className='bg-[#3cb4ab] text-white py-3 px-5 rounded-3xl font-semibold cursor-pointer'>Got it!</button>
+      <button className='bg-[#3cb4ab] hover:bg-[#157a74] text-white py-3 px-5 rounded-3xl font-semibold cursor-pointer'>Got it!</button>
       </div>
     </div>
   )

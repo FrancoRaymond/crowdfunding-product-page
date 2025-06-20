@@ -12,7 +12,7 @@ function App() {
   const [size, setSize] = useState(window.innerWidth)
   const [menuOpen, setMenuOpen] = useState(false)
   const [backProject, setBackProject] = useState(false)
-  const [confirm, setConfirm] = useState(true)
+  const [confirm, setConfirm] = useState(false)
 
 
   useEffect(() => {
