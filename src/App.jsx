@@ -32,11 +32,11 @@ function App() {
       <Navbar size={size} menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Hero size={size}/>
       <div className='-mt-14 z-50 absolute left-1/2 -translate-x-1/2 w-[90%] max-w-[800px]'>
-        <BodyHeader />
+        <BodyHeader setBackProject={setBackProject}/>
         <Counters />
         <About />
       </div>
-      {backProject && < BackProject />}
+      {backProject && < BackProject setBackProject={setBackProject}/>}
       {confirm && < ConfirmationModal/>}
     </div>
   )

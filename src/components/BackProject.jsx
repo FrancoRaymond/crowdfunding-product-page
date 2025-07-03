@@ -1,13 +1,13 @@
 import React from 'react'
 import close from '../assets/images/icon-close-modal.svg'
 
-const BackProjects = () => {
+const BackProjects = ({setBackProject}) => {
   return (
-    <div className='backProjectModal fixed top-0 left-0 h-screen w-full  z-50 flex items-center justify-center'>
-      <div className='bg-white p-5 rounded-md max-w-[700px] w-full'>
+    <div className='backProjectModal fixed top-0 left-0 h-screen w-full overflow-y-scroll  z-50 flex items-center justify-center'>
+      <div className='bg-white p-5 rounded-md max-w-[700px] w-full mt-24'>
         <div className='flex justify-between items-center'>
           <h2 className='font-semibold text-lg'>Back this project</h2>
-          <button><img src={close} alt="" /></button>
+          <button onClick={() => setBackProject(false)}><img src={close} alt="" className='cursor-pointer'/></button>
         </div>
         <p className='text-gray-400 mt-4'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
         <form action="" className='mt-7'>
@@ -60,4 +60,4 @@ const BackProjects = () => {
   )
 }
 
-export default BackProjects
+export default BackProjects;
