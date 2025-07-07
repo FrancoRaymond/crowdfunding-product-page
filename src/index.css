@@ -12,3 +12,7 @@ body{
 .confirmModal{
     background-color: rgba(0, 0, 0, 0.6);
 }
+.pledge{
+    @apply border-[#157a74]
+    
+}
